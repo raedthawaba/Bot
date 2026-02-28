@@ -65,7 +65,9 @@ class TelegramBotHandler:
         self.application.add_handler(CallbackQueryHandler(self.handle_callback))
 
         # بدء البوت
-        await self.application.run_polling()
+        await self.application.initialize()
+        await self.application.start()
+        await self.application.updater.start_polling()
 
     async def start_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """معالجة أمر /start"""

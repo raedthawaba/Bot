@@ -39,6 +39,12 @@ async def lifespan(app: FastAPI):
     # إنشاء مجلد الرفع
     os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
 
+    # تشغيل بوت التليجرام في الخلفية
+    from bot_handler import TelegramBotHandler
+    bot = TelegramBotHandler(settings.TELEGRAM_BOT_TOKEN)
+    asyncio.create_task(bot.start())
+    print("🤖 بوت التليجرام قيد التشغيل...")
+
     yield
 
     # إيقاف التشغيل
