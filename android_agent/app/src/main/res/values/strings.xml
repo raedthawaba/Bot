@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TeleDroid Agent</string>
+    <string name="app_description">تحكم في هاتفك عبر Telegram</string>
+
+    <!-- Main Activity -->
+    <string name="status_connected">متصل</string>
+    <string name="status_disconnected">غير متصل</string>
+    <string name="device_info">معلومات الجهاز</string>
+    <string name="device_name">اسم الجهاز</string>
+    <string name="device_id">معرف الجهاز</string>
+    <string name="telegram_id_hint">معرف Telegram</string>
+    <string name="link_device">ربط الجهاز</string>
+    <string name="start_service">بدء</string>
+    <string name="stop_service">إيقاف</string>
+    <string name="refresh_status">تحديث الحالة</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">TeleDroid Agent</string>
+    <string name="notification_channel_description">خدمة التحكم في الهاتف</string>
+    <string name="notification_title">TeleDroid Agent</string>
+    <string name="notification_text">جاري التشغيل...</string>
+
+    <!-- Errors -->
+    <string name="error_no_telegram_id">الرجاء إدخال معرف Telegram</string>
+    <string name="error_link_failed">فشل الربط</string>
+    <string name="error_network">خطأ في الشبكة</string>
+
+    <!-- Success -->
+    <string name="success_linked">تم ربط الجهاز بنجاح!</string>
+    <string name="success_service_started">تم بدء الخدمة</string>
+    <string name="success_service_stopped">تم إيقاف الخدمة</string>
+</resources>
